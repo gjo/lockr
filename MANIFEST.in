@@ -1,0 +1,8 @@
+include CHANGES.rst
+include COPYING.txt
+include Pipfile
+include Pipfile.lock
+include black.toml
+include constraints.txt
+include tox.ini
+recursive-include tests *.py
