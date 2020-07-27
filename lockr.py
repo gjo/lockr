@@ -1,6 +1,6 @@
 import json
 
-__version__ = "0.1.dev0"
+__version__ = "0.1.dev1"
 
 
 def main() -> None:
@@ -18,7 +18,7 @@ def main() -> None:
                     dep_info = v["version"]
 
             elif "git" in v:
-                dep_info = f' @ {v["git"]}#egg={k}'
+                dep_info = f' @ git+{v["git"]}@{v["ref"]}'
             if dep_info:
                 deps[k] = dep_info
 

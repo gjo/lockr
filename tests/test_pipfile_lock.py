@@ -47,9 +47,9 @@ def tempdir():
 """,
             """\
 appnope==0.1.0; sys_platform == 'darwin'
-pyramid @ https://github.com/Pylons/pyramid.git#egg=pyramid
+pyramid @ git+https://github.com/Pylons/pyramid.git@683bc742f7b08db563f3385796809c09babf004b
 pyramid-debugtoolbar==4.6.1
-""",
+""",  # noqa: E501; black says ok
         ),
     ],
 )
