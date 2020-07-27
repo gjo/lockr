@@ -1,6 +1,10 @@
 [tool.black]
 line-length = 79
-py36 = false
+target-version = [
+  'py36',
+  'py37',
+  'py38',
+]
 exclude = '''
 /(
     \.git
