@@ -31,6 +31,10 @@ def tempdir():
             "editable": true,
             "git": "https://github.com/Pylons/pyramid.git",
             "ref": "683bc742f7b08db563f3385796809c09babf004b"
+        },
+        "webob": {
+            "git": "ssh://git@github.com/Pylons/webob.git",
+            "ref": "259230aa2b8b9cf675c996e157c5cf021c256059"
         }
     },
     "develop": {
@@ -47,8 +51,8 @@ def tempdir():
 """,
             """\
 appnope==0.1.0; sys_platform == 'darwin'
-pyramid @ git+https://github.com/Pylons/pyramid.git@683bc742f7b08db563f3385796809c09babf004b
 pyramid-debugtoolbar==4.6.1
+webob @ git+ssh://git@github.com/Pylons/webob.git@259230aa2b8b9cf675c996e157c5cf021c256059
 """,  # noqa: E501; black says ok
         ),
     ],
