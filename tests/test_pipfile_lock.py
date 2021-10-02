@@ -4,7 +4,7 @@ import tempfile
 import pytest
 
 
-@pytest.yield_fixture
+@pytest.fixture
 def tempdir():
     dir = tempfile.mkdtemp()
     os.chdir(dir)
